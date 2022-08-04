@@ -1,0 +1,50 @@
+<%-include("partials/headerDashboard")%>
+<div class="flex-container-dashboard">
+  <div class="flex-item-left-dashboard">
+    <form class="" action="/comment" method="post">
+      <input type="text" id="search" name="search" placeholder="Search Comments" autocomplete="off">
+      <input type="submit" name="searchUsers" id="searchUsers" value="Find">
+    </form>
+  </div>
+  <div class="flex-item-right-dashboard">
+    <div class="flex-container-dashboard">
+      <div class=flex-item-left-dashboard-inner>
+        <form action="/dashboard" method="get">
+          <input type="submit" id="backToDashboard" name="backToDashboard" value="Back to Dashboad">
+        </form>
+      </div>
+      <div class=flex-item-right-dashboard-inner>
+        <form action="/" method="post">
+          <input type="submit" id="logout" value="Logout">
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<h3 class="image-container-text">
+  <%=warning%>
+</h3>
+<%if(comments.length != 0){%>
+  <%for(var i = 0 ; i<comments.length ; i++){%>
+    <div class="card">
+          <div class="flex-container-comment">
+            <div class="flex-contaniner-left">
+              <div class="container-left">
+            <p class="comments" > <b>Comments: <%=comments[i].comment%></b></p>
+            <p class="comments"> <b>Contact: <%=comments[i].contact%></b></p>
+            <p class="comments"> <b>Commented By: <%=comments[i].commentBy%></b></p>
+          </div>
+            </div>
+            <div class-flex-container-right>
+              <div class="container-right">
+                <form class="" action="comment" method="post">
+                  <button onclick="<%=func%>" type="submit" class="<%=comments[i]._id%>" id="button">Delete Comment</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+  <%}%>
+<%}%>
+
+    <%-include("partials/footer")%>

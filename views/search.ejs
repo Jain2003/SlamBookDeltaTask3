@@ -1,0 +1,40 @@
+<%-include("partials/headerDashboard")%>
+<div class="flex-container-dashboard">
+  <div class="flex-item-left-dashboard">
+    <form action="/dashboard" method="post">
+      <input type="submit" id="backToDashboard" name="backToDashboard" value="Back to Dashboad">
+    </form>
+  </div>
+  <div class="flex-item-right-dashboard">
+    <div class="flex-container-dashboard">
+      <div class=flex-item-left-dashboard-inner>
+        <form  action="/user" method="post">
+          <input type="submit" id="users" value="User Details">
+        </form>
+      </div>
+      <div class=flex-item-right-dashboard-inner>
+        <form action="/" method="post">
+          <input type="submit" id="logout" value="Logout">
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container">
+  <form action="/search" method="post">
+    <div class="row">
+      <div class="col-75">
+        <textarea id="comment" name="comment" placeholder="Comment" style="height:400px" required></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-75">
+        <input type="text" id="contact" name="contact" placeholder="Contact" required autocomplete="off">
+      </div>
+    </div>
+    <div class="row">
+      <input  id="confirm" type="submit" value="confirm">
+    </div>
+  </form>
+</div>
+<%-include("partials/footer")%>

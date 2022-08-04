@@ -1,0 +1,127 @@
+body {
+  background-color: #EED180;
+  padding-top: 210px;
+}
+.head{
+  font-size: 70px;
+  font-weight: bolder;
+  color: #61481C;
+}
+h6{
+  color:#EED180;
+}
+p{
+  color: #EED180;
+}
+* {
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  text-align: center;
+}
+
+.flex-item-left {
+  padding: 20px;
+  flex: 50%;
+}
+
+.flex-item-right {
+  flex: 50%;
+  border-radius: 5px;
+  background-color: #61481C;
+  padding: 5px;
+  height:200px;
+  border-left: solid 10px;
+  color: #E6B325;
+}
+.flex-item-right-register,.flex-item-right-login {
+  flex: 50%;
+  border-radius: 5px;
+  background-color: #61481C;
+  padding: 5px;
+  height:350px;
+  border-left: solid 10px;
+  color: #E6B325;
+}
+.flex-container-search {
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  text-align: center;
+  background-color: #61481C;
+  padding-top:20px;
+}
+
+.flex-item-left-search,.flex-item-right-search{
+  padding: 4px;
+  flex: 50%;
+}
+
+#username,#password,#department {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+#register,#login{
+  width: 70%;
+  background-color: #EED180;
+  font-size : 30px;
+  color: #61481C;
+  font-weight:bolder;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+#register:hover,#login:hover{
+  background-color:#EDDFB3;
+}
+
+#search {
+  padding: 6px;
+  margin-top: 8px;
+  margin-right: 16px;
+  border: none;
+  border-radius:20px;
+  font-size: 17px;
+}
+#searchUsers,#logout {
+  background-color: #EED180;
+  border: none;
+  color: #61481C;
+  padding: 7px 32px;
+  border-radius:20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-weight:bolder;
+  cursor:pointer;
+}
+#searchUsers:hover,#logout:hover{
+  background-color: #EDDFB3;
+}
+
+@media screen and (max-width: 1250px) {
+  .flex-container {
+    flex-direction: column;
+    padding:180px;
+  }
+  .flex-item-right {
+  padding: 50px;
+  flex: 50%;
+  border-bottom: solid;
+  border-right : none;
+}
+  body{
+  padding-top: 180px;
+}
+}

@@ -1,0 +1,17 @@
+<%-include("partials/header")%>
+  <div class="flex-container">
+    <div class="flex-item-left">
+      <p class="head"> DIGITAL SLAMS</p>
+    </div>
+    <div class="flex-item-right-login">
+
+      <form action="/login" method="post">
+        <input type="text" id="username" name="username" placeholder="username" autocomplete="off" required>
+        <input type="password" id="password" name="password" placeholder="password" autocomplete="off" required>
+        <input type="submit" id="login" value="Login">
+        <p> <%=warning%>!!</p>
+      </form>
+    </div>
+  </div>
+
+<%-include("partials/footer")%>

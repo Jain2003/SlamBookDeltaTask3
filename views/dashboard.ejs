@@ -1,0 +1,56 @@
+<%-include("partials/headerDashboard")%>
+<div class="flex-container-dashboard">
+  <div class="flex-item-left-dashboard">
+    <p>Username: <%=activeUser%></p>
+  </div>
+  <div class="flex-item-right-dashboard">
+    <div class="flex-container-dashboard">
+      <div class=flex-item-left-dashboard-inner>
+        <form action = "/comment" method = "post">
+          <input type="submit" id="users" value="Comments">
+        </form>
+      </div>
+      <div class=flex-item-right-dashboard-inner>
+        <form action="/" method="post">
+          <input type="submit" id="logout" value="Logout">
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container-image">
+  <div class="container-image-left">
+    <img src="images/dashboard.PNG" alt="image" width=80% height=400px>
+  </div>
+  <div class="conatiner-image-right">
+    <h3 class="image-container-text">
+      Click on the comments to see all the comments. :)
+    </h3>
+  </div>
+</div>
+
+<div class="container">
+    <form class="submitComment" action="/dashboard" method="post">
+     <b><p class="comments"><%=warning%></p></b>
+    <div class="row">
+      <div class="col-75">
+        <input type="text" id="contact" name="commentFor" placeholder="Comment For" required autocomplete="off">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-75">
+        <textarea id="comment" name="comment" placeholder="Comment" style="height:400px" required autocomplete="off"></textarea>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-75">
+        <input type="text" id="contact" name="contact" placeholder="Contact" required autocomplete="off">
+      </div>
+    </div>
+    <div class="row">
+      <input  class="submitCommentClass" id="confirm" type="submit" value="Post">
+    </div>
+  </form>
+</div>
+
+<%-include("partials/footer")%>

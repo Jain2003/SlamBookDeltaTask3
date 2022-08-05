@@ -1,17 +1,25 @@
 body {
   background-color: #EED180;
   padding-top: 210px;
+  background-image: url("https://i.pinimg.com/originals/ff/22/d4/ff22d451a7862a8773196342d206e61e.jpg");
+  background-position: center;
+  background-size: cover;
+  font-family: 'Oswald', sans-serif;
 }
 .head{
-  font-size: 70px;
-  font-weight: bolder;
+  font-size: 120px;
+  font-weight: 500;
   color: #61481C;
+  font-family: 'Oswald', sans-serif;
+  margin-top: 45px;
 }
 h6{
   color:#EED180;
+  font-family: 'Oswald', sans-serif;
 }
 p{
-  color: #EED180;
+  color: #61481C;
+  font-family: 'Oswald', sans-serif;
 }
 * {
   box-sizing: border-box;
@@ -22,30 +30,32 @@ p{
   flex-direction: row;
   font-size: 30px;
   text-align: center;
+  background-image: url("https://i.pinimg.com/originals/ff/22/d4/ff22d451a7862a8773196342d206e61e.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 .flex-item-left {
-  padding: 20px;
+  padding: 0;
   flex: 50%;
 }
 
 .flex-item-right {
   flex: 50%;
   border-radius: 5px;
-  background-color: #61481C;
   padding: 5px;
-  height:200px;
-  border-left: solid 10px;
-  color: #E6B325;
+  padding-top: 50px;
+  height:300px;
+  background-position: center;
+  background-size: cover;
 }
 .flex-item-right-register,.flex-item-right-login {
   flex: 50%;
   border-radius: 5px;
-  background-color: #61481C;
   padding: 5px;
   height:350px;
-  border-left: solid 10px;
-  color: #E6B325;
+  background-position: center;
+  background-size: cover;
 }
 .flex-container-search {
   display: flex;
@@ -65,15 +75,15 @@ p{
   width: 100%;
   padding: 12px 20px;
   margin: 8px 0;
-  border: 1px solid #ccc;
+  border: 3px solid #61481C;
   border-radius: 4px;
   box-sizing: border-box;
 }
 #register,#login{
   width: 70%;
-  background-color: #EED180;
+  background-color:#61481C ;
   font-size : 30px;
-  color: #61481C;
+  color: #EED180;
   font-weight:bolder;
   padding: 14px 20px;
   margin: 8px 0;
@@ -82,7 +92,7 @@ p{
   cursor: pointer;
 }
 #register:hover,#login:hover{
-  background-color:#EDDFB3;
+  background-color:#A47E3B;
 }
 
 #search {
@@ -118,8 +128,6 @@ p{
   .flex-item-right {
   padding: 50px;
   flex: 50%;
-  border-bottom: solid;
-  border-right : none;
 }
   body{
   padding-top: 180px;

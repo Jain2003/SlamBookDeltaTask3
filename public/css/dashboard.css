@@ -1,28 +1,62 @@
 body{
   margin:0;
   background-color:#EED180;
+  background-image: url("https://i.pinimg.com/originals/ff/22/d4/ff22d451a7862a8773196342d206e61e.jpg");
+  background-position: center;
+  background-size: cover;
 }
-h1,h3,.comments{
+h1,h3,h2,.comments{
   color: #61481C;
+  font-family: 'Oswald', sans-serif;
+}
+
+.comments,.comments-data{
+  font-size: 40px;
+  color: #EED180;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.userDisplay{
+  font-size: 40px;
+  margin-top: 10px;
+  margin-bottom: 0;
 }
 
 p{
   color: #EED180;
+  font-family: 'Oswald', sans-serif;
 }
 h6{
   color:#EED180;
   padding: 0;
-
+  font-family: 'Oswald', sans-serif;
 }
 * {
   box-sizing: border-box;
 }
+
+.onlyImage{
+  border-radius: 20px;
+}
+
 .flex-container-dashboard {
   display: flex;
   flex-direction: row;
   font-size: 30px;
   text-align: center;
   background-color: #61481C;
+  padding-top:20px;
+  background-image: url("https://t3.ftcdn.net/jpg/03/07/33/48/360_F_307334834_gacOaPiZ8tULvcKsgzvIPkNQodE8ckY9.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.flex-container-dashboard-inner{
+  display: flex;
+  flex-direction: row;
+  font-size: 30px;
+  text-align: center;
   padding-top:20px;
 }
 
@@ -70,21 +104,7 @@ h6{
   font-weight:bolder;
   cursor:pointer;
 }
-#confirm {
-  margin-top: 3px;
-  background-color:#61481C ;
-  border: none;
-  width: 240px;
-  color: #EED180;
-  padding: 7px 32px;
-  border-radius:20px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  font-weight:bolder;
-  cursor:pointer;
-}
+
 #searchUsers:hover,#logout:hover,#users:hover,#backToDashboard:hover,#confirm:hover,#button:hover{
   background-color: #EDDFB3;
 }
@@ -94,6 +114,9 @@ h6{
   background-color:#EED180;
   font-size:30px;
   font-weight:bolder;
+  background-image: url("https://t3.ftcdn.net/jpg/03/07/33/48/360_F_307334834_gacOaPiZ8tULvcKsgzvIPkNQodE8ckY9.jpg");
+  background-position: center;
+  background-size: cover;
   color:#61481C;
   border:solid 4px;
   border-radius:20px;
@@ -126,10 +149,10 @@ h6{
 }
 #button{
   margin:4px 120px;
-  background-color: #61481C;
+  background-color: #EED180;
   border: none;
   width: 240px;
-  color:  #EED180;
+  color:#61481C;
   padding: 10px 32px;
   border-radius:20px;
   text-align: center;
@@ -143,7 +166,7 @@ h6{
 #comment,#contact {
   width: 100%;
   padding: 12px;
-  border: 1px solid #EED180;
+  border: 3px solid #EED180;
   border-radius: 4px;
   resize: vertical;
   margin-bottom:3px;
@@ -151,10 +174,12 @@ h6{
 
 .container {
   margin:20px;
-  border: solid 10px #61481C;
+  border: solid 3px #EED180;
   border-radius: 5px;
-  background-color: #EED180;
   padding: 20px;
+  background-image: url("https://t3.ftcdn.net/jpg/03/07/33/48/360_F_307334834_gacOaPiZ8tULvcKsgzvIPkNQodE8ckY9.jpg");
+  background-position: center;
+  background-size: cover;
 }
 
 /* Clear floats after the columns */
@@ -162,6 +187,13 @@ h6{
   content: "";
   display: table;
   clear: both;
+}
+
+.image-container-text{
+  text-align: center;
+  font-size: 40px;
+  color: #61481C;
+  font-family: 'Oswald', sans-serif;
 }
 
 @media (max-width: 1250px) {

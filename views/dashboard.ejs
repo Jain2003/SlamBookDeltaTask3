@@ -1,10 +1,10 @@
 <%-include("partials/headerDashboard")%>
 <div class="flex-container-dashboard">
   <div class="flex-item-left-dashboard">
-    <p>Username: <%=activeUser%></p>
+    <p class="userDisplay">Username: <%=activeUser%></p>
   </div>
   <div class="flex-item-right-dashboard">
-    <div class="flex-container-dashboard">
+    <div class="flex-container-dashboard-inner">
       <div class=flex-item-left-dashboard-inner>
         <form action = "/comment" method = "post">
           <input type="submit" id="users" value="Comments">
@@ -20,12 +20,12 @@
 </div>
 <div class="container-image">
   <div class="container-image-left">
-    <img src="images/dashboard.PNG" alt="image" width=80% height=400px>
+    <img class="onlyImage" src="images/dashboardNew.PNG" alt="image" width=90% height=470px>
   </div>
   <div class="conatiner-image-right">
-    <h3 class="image-container-text">
+    <h2 class="image-container-text">
       Click on the comments to see all the comments. :)
-    </h3>
+    </h2>
   </div>
 </div>
 
